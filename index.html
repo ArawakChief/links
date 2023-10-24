@@ -44,6 +44,7 @@
   <div class="link">
     <img
       src="https://media.newyorker.com/photos/59096d451c7a8e33fb38e4ca/16:9/w_1280,c_limit/071210_r16884_p646.jpg">
+
     <a target="_blank" href="https://www.newyorker.com/magazine/2007/12/10/the-checklist/">A
       Life-Saving Checklist — The New Yorker</a>
       </div>
@@ -70,32 +71,30 @@
       <img src="profile-pic.7ed181abf00273b7177fecde81408e99.jpg" alt="Kalisha Dorsey's cover-pic" class="banner-image">
     </div>
 
-    body {
-      display: flex;
-      justify-content: center;
-    }
+    <style>
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+    </style>
+    </body>
 
-    .items {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      max-width: 640px;
-      flex-grow: 1;
-    }
-  </body> 
-
-  body {
+    <body>
+ body {
     background-color: #004643;
   }
 
   .name {
     color: #fffffe;
     display: flex;
-    justify-content: center;
-  }
-
-  .banner {
-    display: flex
     justify-content: center;
   }
 
@@ -122,6 +121,7 @@
   flex-direction: column;
   gap: 30px;
   max-width: 640px;
+  flex-grow: 1;
 }
 
 .link {
@@ -135,11 +135,12 @@
   text-decoration: none;
   text-align: center;
   flex-grow: 1;
-}
-</div>
+
 
 .social-icons {
   display: flex;
   justify-content: space-around;
 }
 </html>
+</div.items>
+</body>
